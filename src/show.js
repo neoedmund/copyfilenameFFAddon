@@ -2,7 +2,7 @@
 		ss = [ ] ;
 		ss . push ( "<table>" ) ;
 		ss . push ( '<tr><th>filename' )
-		const downloads = await browser . downloads . search ( { limit : 20 , orderBy : [ '-startTime' ] , state : 'complete' } ) ;
+		const downloads = await browser . downloads . search ( { limit : 20 , orderBy : [ '-startTime' ] } ) ;
 		for ( let down of downloads ) {
 			ss . push ( '<tr><td>' )
 			ss . push ( down . filename )
